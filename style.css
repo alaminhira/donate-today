@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Lobster&family=Poppins:wght@400;600;700&display=swap");
+
 *,
 *:focus {
   margin: 0;
@@ -14,36 +15,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #707070;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 0;
-}
-.section--flex {
-  display: flex;
-  justify-content: center;
-}
-.section--flex > * {
-  margin: 0 0.9375rem;
-}
-.section__content {
-  max-width: 71.25rem;
-}
-.section__info {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.section__title {
-  font-family: "Inter", sans-serif;
-  font-size: 2.8125rem;
-  color: #121212;
-  margin-bottom: 0.8rem;
-}
-.section__intro {
-  margin: 0 auto;
-  width: 70%;
 }
 
 a {
@@ -63,6 +34,42 @@ a {
   cursor: pointer;
 }
 
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.section--flex {
+  display: flex;
+  justify-content: center;
+}
+
+.section--flex>* {
+  margin: 0 0.9375rem;
+}
+
+.section__content {
+  max-width: 71.25rem;
+}
+
+.section__info {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section__title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.8125rem;
+  color: #121212;
+  margin-bottom: 0.8rem;
+}
+
+.section__intro {
+  margin: 0 auto;
+  width: 70%;
+}
+
 .header {
   background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.7)), url(./images/header-banner.jpg);
   min-height: 100vh;
@@ -70,22 +77,26 @@ a {
   background-size: cover;
   background-position: top;
 }
+
 .header__content {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
+
 .header__details {
   width: 75%;
   text-align: center;
 }
+
 .header__heading {
   font-family: "Inter", sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
 }
+
 .header__quote {
   margin: 1rem auto;
   width: 80%;
@@ -97,30 +108,36 @@ a {
   font-size: 1.875rem;
   font-weight: 600;
 }
+
 .donate__amount-item.active {
   background: #FFEEEE;
   color: #FF5959;
   border: 1px solid #FF5959;
 }
+
 .donate__now {
   margin-top: 3rem;
   text-align: center;
 }
+
 .donate__input {
   display: block;
   width: 80%;
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
-  color: #777474;
+  color: #B3B3B3;
   border: none;
   border-bottom: 1px solid #DADADA;
   margin-bottom: 1.5rem;
 }
+
 .donate__input[type=number] {
   -moz-appearance: textfield;
 }
-.donate__input::-webkit-outer-spin-button, .donate__input::-webkit-inner-spin-button {
+
+.donate__input::-webkit-outer-spin-button,
+.donate__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
@@ -128,44 +145,60 @@ a {
   padding: 3rem 1.5rem;
   border-radius: 0.5rem;
 }
+
 .plan__item:nth-of-type(1) {
   background: rgba(79, 157, 166, 0.1);
 }
+
 .plan__item:nth-of-type(2) {
   background: rgba(255, 89, 89, 0.1);
 }
+
 .plan__item:nth-of-type(3) {
   background: #FFF4D6;
 }
-.plan__item-icon, .plan__item-title {
+
+.plan__item-icon,
+.plan__item-title {
   color: #121212;
 }
+
 .plan__item-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0 0.5rem;
 }
+
 .plan__item P {
   font-size: 1rem;
 }
 
 .program__item {
   background: rgba(198, 197, 197, 0.2);
+  flex-basis: 33.33%;
+  border-radius: .5rem;
+  overflow: hidden;
 }
+
 .program__item-img {
   max-width: 100%;
+  height: 14rem;
+  object-fit: cover;
 }
+
 .program__item-info {
   padding: 0.5rem;
 }
+
 .program__item-info p {
   font-size: 1rem;
-  text-align: justify;
 }
+
 .program__item-title {
   font-size: 1.25rem;
   color: #121212;
 }
+
 .program__item-footer {
   display: flex;
   justify-content: space-between;
@@ -173,12 +206,15 @@ a {
   margin-top: 1.5rem;
   font-size: 1rem;
 }
-.program__item-footer > *:not(:last-child) {
+
+.program__item-footer>*:not(:last-child) {
   margin-right: 1.25rem;
 }
+
 .program__item-footer span {
   color: #FF5959;
 }
+
 .program__item-footer p {
   color: #121212;
 }
@@ -192,6 +228,7 @@ a {
   justify-content: center;
   margin: 0 auto;
 }
+
 .updates__form input {
   font-size: 1rem;
   color: #AA9F9F;
@@ -200,6 +237,7 @@ a {
   width: 40%;
   border-radius: 0.3rem 0 0 0.3rem;
 }
+
 .updates__form button {
   font-weight: 500;
   font-size: 0.9rem;
@@ -212,6 +250,7 @@ a {
   text-align: center;
   margin-top: 4rem;
 }
+
 .footer__quote {
   font-family: "Lobster", cursive;
   font-size: 2.25rem;
@@ -219,7 +258,8 @@ a {
   color: #FF5959;
   margin-bottom: 1.5rem;
 }
+
 .footer p {
   color: #D9DBE1;
   font-size: 0.9rem;
-}/*# sourceMappingURL=style.css.map */
+}
