@@ -1,21 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Lobster&family=Poppins:wght@400;600;700&display=swap");
-/*
-COLORS:
-    #fff
-    #FF5959
-    #707070
-    #121212
-    #B3B3B3
-
-    Boexs: 4F9DA6, FF5959 FFF4D6, FFF4D6 D9D9D9
-    AA9F9F
-    0B0D17
-    D9DBE1
-
-Fonts:
-
-
-*/
 *,
 *:focus {
   margin: 0;
@@ -80,17 +63,8 @@ a {
   cursor: pointer;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 .header {
-  background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.7)), url(../images/header-banner.jpg);
+  background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.7)), url(./images/header-banner.jpg);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +116,12 @@ input::-webkit-inner-spin-button {
   border: none;
   border-bottom: 1px solid #DADADA;
   margin-bottom: 1.5rem;
-  -moz-appearance: none;
+}
+.donate__input[type=number] {
+  -moz-appearance: textfield;
+}
+.donate__input::-webkit-outer-spin-button, .donate__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .plan__item {
